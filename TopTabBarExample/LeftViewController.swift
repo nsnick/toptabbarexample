@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LeftViewController.swift
 //  TopTabBarExample
 //
 //  Created by Nick Wilkerson on 5/1/17.
@@ -8,18 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LeftViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = UIColor.green
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
 
 }
-

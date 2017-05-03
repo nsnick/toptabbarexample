@@ -15,7 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        window = UIWindow()
         // Override point for customization after application launch.
+        let tabBarController = UITabBarController()
+        let containerViewController = ContainerViewController()
+        containerViewController.tabBarItem = UITabBarItem(title: "Red/Green", image: nil, selectedImage: nil)
+        
+        let yellowViewController = UIViewController()
+        yellowViewController.view.backgroundColor = UIColor.yellow
+        tabBarController.setViewControllers([containerViewController, yellowViewController], animated: false)
+        yellowViewController.tabBarItem = UITabBarItem(title: "Yellow", image: nil, selectedImage: nil)
+
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
         return true
     }
 

@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5B17FDAE1EB82CA700138BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17FDAD1EB82CA700138BCA /* AppDelegate.swift */; };
-		5B17FDB01EB82CA700138BCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17FDAF1EB82CA700138BCA /* ViewController.swift */; };
-		5B17FDB31EB82CA700138BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B17FDB11EB82CA700138BCA /* Main.storyboard */; };
 		5B17FDB51EB82CA700138BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B17FDB41EB82CA700138BCA /* Assets.xcassets */; };
-		5B17FDB81EB82CA700138BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B17FDB61EB82CA700138BCA /* LaunchScreen.storyboard */; };
 		5B17FDC31EB82CA700138BCA /* TopTabBarExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17FDC21EB82CA700138BCA /* TopTabBarExampleTests.swift */; };
 		5B17FDCE1EB82CA700138BCA /* TopTabBarExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17FDCD1EB82CA700138BCA /* TopTabBarExampleUITests.swift */; };
+		5B17FDDC1EB82CEF00138BCA /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17FDDB1EB82CEF00138BCA /* ContainerViewController.swift */; };
+		5B17FDE31EB82D5E00138BCA /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17FDE11EB82D5E00138BCA /* LeftViewController.swift */; };
+		5B17FDE41EB82D5E00138BCA /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17FDE21EB82D5E00138BCA /* RightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,7 @@
 /* Begin PBXFileReference section */
 		5B17FDAA1EB82CA700138BCA /* TopTabBarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopTabBarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B17FDAD1EB82CA700138BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B17FDAF1EB82CA700138BCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B17FDB21EB82CA700138BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B17FDB41EB82CA700138BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5B17FDB71EB82CA700138BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B17FDB91EB82CA700138BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B17FDBE1EB82CA700138BCA /* TopTabBarExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopTabBarExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B17FDC21EB82CA700138BCA /* TopTabBarExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarExampleTests.swift; sourceTree = "<group>"; };
@@ -47,6 +44,9 @@
 		5B17FDC91EB82CA700138BCA /* TopTabBarExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopTabBarExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B17FDCD1EB82CA700138BCA /* TopTabBarExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarExampleUITests.swift; sourceTree = "<group>"; };
 		5B17FDCF1EB82CA700138BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B17FDDB1EB82CEF00138BCA /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		5B17FDE11EB82D5E00138BCA /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		5B17FDE21EB82D5E00138BCA /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				5B17FDAD1EB82CA700138BCA /* AppDelegate.swift */,
-				5B17FDAF1EB82CA700138BCA /* ViewController.swift */,
-				5B17FDB11EB82CA700138BCA /* Main.storyboard */,
+				5B17FDDB1EB82CEF00138BCA /* ContainerViewController.swift */,
+				5B17FDE11EB82D5E00138BCA /* LeftViewController.swift */,
+				5B17FDE21EB82D5E00138BCA /* RightViewController.swift */,
 				5B17FDB41EB82CA700138BCA /* Assets.xcassets */,
-				5B17FDB61EB82CA700138BCA /* LaunchScreen.storyboard */,
 				5B17FDB91EB82CA700138BCA /* Info.plist */,
 			);
 			path = TopTabBarExample;
@@ -235,9 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B17FDB81EB82CA700138BCA /* LaunchScreen.storyboard in Resources */,
 				5B17FDB51EB82CA700138BCA /* Assets.xcassets in Resources */,
-				5B17FDB31EB82CA700138BCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B17FDB01EB82CA700138BCA /* ViewController.swift in Sources */,
+				5B17FDE31EB82D5E00138BCA /* LeftViewController.swift in Sources */,
+				5B17FDE41EB82D5E00138BCA /* RightViewController.swift in Sources */,
+				5B17FDDC1EB82CEF00138BCA /* ContainerViewController.swift in Sources */,
 				5B17FDAE1EB82CA700138BCA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,25 +297,6 @@
 			targetProxy = 5B17FDCA1EB82CA700138BCA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5B17FDB11EB82CA700138BCA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B17FDB21EB82CA700138BCA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5B17FDB61EB82CA700138BCA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B17FDB71EB82CA700138BCA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5B17FDD01EB82CA700138BCA /* Debug */ = {
